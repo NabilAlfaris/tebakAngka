@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div  class="skorBoard">
+            <div class="kamu">
+                <h2>Kamu</h2>
+                <h1 id="skorKamu"></h1>
+            </div>
+            <div class="vs">
+                <h2>vs</h2>
+                <h1>:</h1>
+            </div>
+            <div class="com">
+                <h2>COM</h2>
+                <h1 id="skorCom"></h1>
+            </div>
+        </div>
+        <div class="button">
+            <button onclick="kurang()">-</button>
+            <p id="p">0</p>
+            <button onclick="tambah()">+</button>
+        </div>
+        <div class="tebakKesempatan">
+            <div class="tebak">
+                <button onclick="tebak()">Tebak</button>
+                <button onclick="repeat()"><i class="bi bi-arrow-clockwise"></i></button>
+            </div>
+            <p id="kesempatan"></p>
+        </div>
+    </div>
+    <div class="popUp" id="popUp">
+        <div id="poppUpBackground" class="popUp-content">
+            <div class="trans-bg"></div>
+            <div class="popUp-background">
+                <h2 id="definition"></h2>
+                <p id="message"></p>
+                <div class="popUp-button">
+                    <button id="popOke" onclick="popUpButtonOke()">Oke</button>
+                    <button id="popLanjut" onclick="popUpButtonUlang()">Ulang</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
